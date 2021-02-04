@@ -289,6 +289,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &922688084
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +401,7 @@ GameObject:
   - component: {fileID: 1124441404}
   - component: {fileID: 1124441406}
   - component: {fileID: 1124441405}
+  - component: {fileID: 1124441407}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -468,6 +470,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124441403}
   m_CullTransparentMesh: 0
+--- !u!114 &1124441407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124441403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b52c93f7716f149a8d9e21d69dd90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1237433501
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -6}
+  m_AnchoredPosition: {x: -90, y: -6}
   m_SizeDelta: {x: 256, y: 32}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1237433503
