@@ -354,8 +354,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6107238229347816047, guid: cf1ddcf9d863aa2438932c9a2dc91053, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 1320224242315178292, guid: 2b23c5889f61b9b40a8b59dc988c7085, type: 3}
+    - target: {fileID: 6107238229347816047, guid: cf1ddcf9d863aa2438932c9a2dc91053, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107238229347816047, guid: cf1ddcf9d863aa2438932c9a2dc91053, type: 3}
+      propertyPath: chanceToChangeDirection
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107238229347816047, guid: cf1ddcf9d863aa2438932c9a2dc91053, type: 3}
+      propertyPath: secondsBetweenAppleDrops
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1ddcf9d863aa2438932c9a2dc91053, type: 3}
