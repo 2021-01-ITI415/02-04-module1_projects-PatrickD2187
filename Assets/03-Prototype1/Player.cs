@@ -8,15 +8,30 @@ public class Player : MonoBehaviour
     public static float bottomY = -20f;
     private int count;
 
+    public float speed = 5f;
+    public Rigidbody rigid;
+    public float horizontal;
+    public float vertical;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < 1f)
+        {
+            
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
+
+            Vector3 direction = new Vector3(horizontal, 0.0f , vertical );
+
+            rigid.AddForce(direction * speed);
+        }
 
         if (transform.position.y < bottomY)
         {
@@ -28,8 +43,9 @@ public class Player : MonoBehaviour
             // Call the public PlayerDestroyed() method of apScript
             apScript.PlayerDestroyed();
         }
-
+        
     }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PickUp"))
