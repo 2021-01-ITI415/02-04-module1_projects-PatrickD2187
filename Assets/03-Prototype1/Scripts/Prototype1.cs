@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Prototype1 : MonoBehaviour
 {
+    public int numLives = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +26,13 @@ public class Prototype1 : MonoBehaviour
         {
             Destroy(tGO);
         }
+
+        numLives = numLives - 1;
+
+        if(numLives == 0)
+        {
+            SceneManager.LoadScene("Main-Prototype 1");
+        }
+        
     }
 }

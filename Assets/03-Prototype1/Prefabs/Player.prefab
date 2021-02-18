@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8647031242252603844}
   - component: {fileID: 1381937909539611451}
   - component: {fileID: 924065301933176272}
-  - component: {fileID: -3367803648805812528}
+  - component: {fileID: 4448177537797931508}
   m_Layer: 0
   m_Name: Player
   m_TagString: Projectile
@@ -54,7 +54,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 1
+  m_MotionVectors: 0
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
@@ -111,9 +111,9 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &-3367803648805812528
+--- !u!114 &4448177537797931508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 926dbcd1eaf78f344a6f764163ad55fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
   rigid: {fileID: 924065301933176272}
   horizontal: 0
   vertical: 0

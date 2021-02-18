@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public static float bottomY = -20f;
     private int count;
 
-    public float speed = 5f;
+    public float speed = 20f;
     public Rigidbody rigid;
     public float horizontal;
     public float vertical;
@@ -22,22 +22,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < 1f)
-        {
-            
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
 
-            Vector3 direction = new Vector3(horizontal, 0.0f , vertical );
+            Vector3 direction = new Vector3(horizontal, 0.0f, vertical);
 
             rigid.AddForce(direction * speed);
-        }
 
         if (transform.position.y < bottomY)
         {
             Destroy(this.gameObject);
 
-            // Get a reference to the ApplePicker component of Main Camera
+            // Get a reference to the Prototype1 component of Main Camera
             Prototype1 apScript = Camera.main.GetComponent<Prototype1>();
 
             // Call the public PlayerDestroyed() method of apScript
