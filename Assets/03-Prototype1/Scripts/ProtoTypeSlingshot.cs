@@ -94,7 +94,7 @@ public class ProtoTypeSlingshot : MonoBehaviour
             projectileRigidbody.velocity = -mouseDelta * velocityMult;
             FollowCam.POI = projectile; 
             projectile = null;
-            ProjectileLine.S.poi = projectile;
+            
         }
     }
 }
