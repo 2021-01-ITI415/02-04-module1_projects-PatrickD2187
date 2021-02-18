@@ -25,9 +25,8 @@ public class Prototype1 : MonoBehaviour
         foreach (GameObject tGO in tProjectileArray)
         {
             Destroy(tGO);
+            numLives = numLives - 1;
         }
-
-        numLives = numLives - 1;
 
         if(numLives == 0)
         {
