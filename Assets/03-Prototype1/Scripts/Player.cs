@@ -23,13 +23,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y < 15)
+        {
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
 
             Vector3 direction = new Vector3(horizontal, 0.0f, vertical);
 
             rigid.AddForce(direction * speed);
-
+        }
         if (transform.position.y < bottomY)
         {
             Destroy(this.gameObject);
